@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>StringWayTech</title>
+	<link rel="stylesheet" type="text/css" href="string.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+      				<li class="nav-item dropdown">
+        				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         				 <strong id="course">Courses</strong>
+        				</a>
+        				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          					<a class="dropdown-item" href="#">Stream</a>
+          					<a class="dropdown-item" href="#">Syllabus</a>
+          					<a class="dropdown-item" href="#">Question Paper</a>
+          					<a class="dropdown-item" href="#">Study Material</a>
+        				</div>
+        			</li>
+        			<li>
+        				<form class="form-inline my-2 my-lg-0">
+      						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      						<button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+    					</form>
+        			</li>
+    			</ul>
+    		</div>
+    		<div id="nav">
+    			<a class="navbar-brand" href="#"><img id="logo" src="logo.jpg"><strong>StringWayTech</strong></a>
+      		</div>
+    		<div>
+    			<ul class="navbar-nav mr-auto">
+
+             <div class="dropdown">
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <strong id="course">User Name</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Notification</a>
+                    <a class="dropdown-item" href="#">Setting</a>
+                    <a class="dropdown-item" href="#">help</a>
+                    <a class="dropdown-item" href="#">Log out</a>
+                </div>
+              </li>
+            </div>
+
+      			</ul>
+			</div>
+	</nav>	
+	
+<!--Edit profile-->
+<div style="background-color:#e5e5e5;padding:50px;">
+ <div ><h2>User Name will be shown here</h2></div>
+  <div class="user-name">
+    <a onclick="document.getElementById('id01').style.display='block'" href="#">Edit Name</a>&nbsp;&nbsp;&nbsp;
+    <a onclick="document.getElementById('id01').style.display='block'" href="#">Edit Bio</a>
+  </div>
+  <div class="edit-profile">
+      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-blue">Edit Profile</button>
+  </div>
+
+  <!--modal menu-->
+    <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-blue"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Edit Basic Info</h2>
+      </header>
+      <div class="w3-container">
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Real Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">User Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">India</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Bio</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+      </div>
+      <footer class="w3-container w3-blue">
+        <p></p>
+      </footer>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+// Edit Profile Modal
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+      <span class="col-sm-2 left" >
+      	<br>
+        <nav class="nav flex-column">
+            <h6>My Stuff</h6>
+            <a class="nav-link" href="#">Courses</a>
+           <h6>My Account</h6>
+            <a class="nav-link" href="#">Progress</a>
+            <a class="nav-link" href="#">Profile</a>
+            <a class="nav-link" href="#">Teachers</a>
+          </nav>
+      </span>
+      <div class="col-sm-8">
+      	<br>
+  <h2>Total there will be approx 6 questions each of 3 marks , form all the chapters of the syllabus(Attempt any 5).</h2>
+<button class="accordion"><span class="spinner-grow spinner-grow-sm"></span>Applied Chemistry Syllabus</button>
+<div class="panel">
+   <iframe style="width: 100%;min-height: 90vh; overflow: hidden;" src="First Semester/Applied_Chemistry_1.pdf#toolbar=0&navpans=0&scrollbar=0&embedded=true&statusbar=0&view=Fit;readonly=true;disableprint=true;" oncontextmenu="return false" onselect="return false" ondragstart="return false"></iframe>
+</div>
+</div>
+</div>
+</div>
+
+
+ <script> 
+           $(document).contextmenu(function () {
+                                return false;
+                            });
+
+            function gfg_Run() { 
+                document.addEventListener('contextmenu',  
+                        event => event.preventDefault()); 
+                el_down.innerHTML = "Right click disabled"; 
+            }          
+        </script>  
+
+
+<script> 
+            var el_up = document.getElementById("GFG_UP"); 
+            var el_down = document.getElementById("GFG_DOWN"); 
+            el_up.innerHTML = "Click on the button to disable right click"; 
+              
+            function gfg_Run() { 
+                document.addEventListener('contextmenu',  
+                        event => event.preventDefault()); 
+                el_down.innerHTML = "Right click disabled"; 
+            }          
+        </script> 
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
